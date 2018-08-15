@@ -1,8 +1,8 @@
-# Cat Button
+# Bitcoin AJAX Example
 
 ## File
 
-* [`Bitcoin AJAX`](/bitcoin-prices-unsolve.html)
+* [`Bitcoin AJAX`](bitcoin-prices-unsolved.html)
 
 ## Instructions
 
