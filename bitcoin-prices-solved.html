@@ -1,4 +1,4 @@
-<!--Answer the 10 questions in the javascript portion.-->
+<!--This file is the solution.  Answers are below.-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,19 +61,19 @@
 //QUESTION 1: This is a JQuery Event that waits for the user the click the button.  The code after will not fire until the button is clicked.
     $("#bitcoin-button").on("click", function() {
       
-//QUESTION 2: We could bring in the currency symbol, the date, etc
+//QUESTION 2: We could bring in the currency symbol, the date, etc.
       var queryURL = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
-//QUESTION 3: What is AJAX doing here?
+//QUESTION 3: AJAX is retrieving our data from the API.
       $.ajax({
         url: queryURL,
 
-//QUESTION 4: Get requests data from a specified resource.
+//QUESTION 4: GET requests data from a specified resource.
         method: "GET",
         dataType: 'json'
       })
 
-//QUESTION 5: THEN we display the data from the JSON
+//QUESTION 5: First we have to GET the data, THEN we can display it and work with it.  Remember this is async - the THEN keeps things in the correct order.
         .then(function(response) {
         
 //QUESTION 6: firstCurrency = USD, secondCurrency = GBP, thirdCurrency = EUR   
